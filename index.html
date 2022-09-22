@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/910ef3a360.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Junior Developer</p>
+          <h1>
+            Hi, I'm <span>Angelica</span><br />
+            Spadaffora from NYC
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--About section-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile-pic.jpeg" alt="profile pic" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm an enthusiastic focused and motivated Junior Developer with
+              one plus years of experience seeking an opportunity to contribute
+              in companies by implementing concepts, knowledge, and
+              methodologies learn thereby adding value for the organization. I
+              have the ability to apply theoretical concepts in the practical
+              world. Check out some of my work in the Projects section.
+              <br /><br />
+              I'm open to Job opportunities where I can contribute, learn and
+              grow. If you have a good opportunity that matches my skills and
+              experience then don't hesitate to contact me.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developer</span><br />
+                  HTML CSS JavaScript
+                </li>
+                <li>
+                  <span>Software Development</span><br />
+                  Lifecycle software management
+                </li>
+                <li>
+                  <span>IT Tech</span><br />Networking and technology components
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2019 - Current</span><br />
+                  Freelancer as IT Technician
+                </li>
+                <li>
+                  <span>2017 - 2019</span><br />
+                  IT support at Stellar Services
+                </li>
+                <li>
+                  <span>2014 - 2015</span><br />Lifecycle Software manager in
+                  Colombia
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022</span><br />W3schools JavaScript Certificate</li>
+                <li>
+                  <span>2018</span><br />
+                  AOS in Network Administration and Security
+                </li>
+                <li><span>2013</span><br />Bachelor in Software Engineer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Services Section-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet. Ut eligendi magnam ut minima deleniti
+              ut laborum omnis ut sint culpa est quia cumque. Ea expedita
+              repellendus eos possimus autem ut dolores voluptatem.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-window-restore"></i>
+            <h2>Custom Web Applications</h2>
+            <p>
+              Lorem ipsum dolor sit amet. Ut eligendi magnam ut minima deleniti
+              ut laborum omnis ut sint culpa est quia cumque. Ea expedita
+              repellendus eos possimus autem ut dolores voluptatem.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Website Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet. Ut eligendi magnam ut minima deleniti
+              ut laborum omnis ut sint culpa est quia cumque. Ea expedita
+              repellendus eos possimus autem ut dolores voluptatem.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Portfolio Section-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="task manager pic" />
+            <div class="layer">
+              <h3>Task Manager App</h3>
+              <p>This web app creates and manage tasks</p>
+              <a
+                href="https://github.com/spadaffora4/Final_Project_Group8"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="phone pic" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>This web app plays any kind of music</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="phone pic" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>This web app allows you shopping various kind of items</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!--Contact Section-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-at"></i>aj.spadaffora@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+1 917 767 7493</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/angelica-spadaffora/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/spadaffora4"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a
+              href="images/Angelica_Spadaffora_Resume_2021 (1).pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2022 Angelica Spadaffora. All rights reserved.</p>
+      </div>
+    </div>
+    <!--JS code for the action of the tabs in the about me section-->
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tanContents = document.getElementsByClassName("tab-contents");
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tanContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+      var sideMenu = document.getElementById("side-menu");
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwH6yqBjXRkOn4PWHx8YfTU9UnJ0ad63cpSLfaEidOGE7ZwYbdTPM9wSMhbleJckeKJ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML =
+              "Your message has been sent. Thank you for contact me! ";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
